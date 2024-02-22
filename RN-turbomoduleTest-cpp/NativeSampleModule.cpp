@@ -16,6 +16,28 @@ std::string NativeSampleModule::getRand(jsi::Runtime& rt) {
   return std::to_string(random);
 }
 
+bool facebook::react::NativeSampleModule::createFile(jsi::Runtime& rt, const std::string fName, const std::string content) {
+  try {
+    std::ofstream NewFile(fName);
+    NewFile << content;
+    NewFile.close();
+    return true;
+  } catch (const std::exception& e) {
+    return false;
+  }
+}
+
+std::string facebook::react::NativeSampleModule::getFile(jsi::Runtime& rt, const std::string fName) {
+ std::string myText;
+ std::ifstream MyReadFile(fName);
+ std::string result = "";
+ while (getline (MyReadFile, myText)) {
+   result += myText;
+ }
+
+ MyReadFile.close();
+ return result;
+}
 
 
 } // namespace facebook::react

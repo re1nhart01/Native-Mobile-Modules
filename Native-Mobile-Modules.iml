@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/RN-AppVersion-java" isTestSource="false" packagePrefix="com.appName.appVersionMarket" />
+      <sourceFolder url="file://$MODULE_DIR$/RN-emailList-java" isTestSource="false" packagePrefix="com.appName.mail" />
+      <sourceFolder url="file://$MODULE_DIR$/RN-rateApp-java" isTestSource="false" packagePrefix="com.appName.rateUsPopup" />
+      <sourceFolder url="file://$MODULE_DIR$/RN-sharedStorage-java" isTestSource="false" packagePrefix="com.appName.sharedStorage" />
+      <sourceFolder url="file://$MODULE_DIR$/RN-softInput-java" isTestSource="false" packagePrefix="com.appName.services.softInputMode" />
+      <sourceFolder url="file://$MODULE_DIR$/RN-splashActivity-java" isTestSource="false" packagePrefix="com.appName" />
+      <sourceFolder url="file://$MODULE_DIR$/RN-utils-java" isTestSource="false" packagePrefix="com.appName.utilities" />
+      <sourceFolder url="file://$MODULE_DIR$/RN-widget-java" isTestSource="false" packagePrefix="com.appName.Widgets.AssistantSummary" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
