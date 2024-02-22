@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.appName.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/app_widget_background"
+    android:theme="@style/AppTheme.AppWidgetContainer">
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/appwidget_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_height="45dp"
+            android:layout_width="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="36dp"
+            android:textAlignment="textStart"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#99ffffff"
+            android:textSize="13dp"
+            android:text="SUMMARY" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/applist_assistant"
+        android:layout_below="@id/appwidget_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/assistant_assistant_icon"
+                android:layout_height="22dp"
+                android:layout_width="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assistant"
+                android:layout_marginLeft="24dp"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/summary_assistant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:textColor="#99ffffff"
+            android:textSize="13dp"
+            android:text="0" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/applist_reminders"
+        android:layout_below="@id/applist_assistant"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/assistant_reminders_icon"
+                android:layout_height="22dp"
+                android:layout_width="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminders"
+                android:layout_marginLeft="24dp"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/summary_reminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:textColor="#99ffffff"
+            android:textSize="13dp"
+            android:text="0" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/applist_birthdays"
+        android:layout_below="@id/applist_reminders"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/assistant_birthdays_icon"
+                android:layout_height="22dp"
+                android:layout_width="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birthdays"
+                android:layout_marginLeft="24dp"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/summary_birthdays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:textColor="#99ffffff"
+            android:textSize="13dp"
+            android:text="0" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/applist_holidays"
+        android:layout_below="@id/applist_birthdays"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/assitant_holidays_icon"
+                android:layout_height="22dp"
+                android:layout_width="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Holidays"
+                android:layout_marginLeft="24dp"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/summary_holidays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:text="0"
+            android:textColor="#99ffffff"
+            android:textSize="13dp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_marginTop="10dp"
+        android:layout_width="380px"
+        android:layout_height="430px"
+        android:minWidth="380px"
+        android:layout_marginLeft="80pt"
+        android:src="@drawable/parrot_image" />
+</RelativeLayout>
